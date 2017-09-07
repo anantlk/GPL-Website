@@ -1,0 +1,293 @@
+#sec_2
+{
+  font-family:Open Sans !important;
+}
+.hidden-menu
+{
+  display:block;
+  background-color:#efefef;
+  width:100;
+}
+.login
+{
+  display:none;
+  background:linear-gradient(to right,#5d376d 10%,#2f2346 90%);
+  box-shadow:0px 2px 8px grey;
+  width:100%;
+}
+#sec-2-login,#sec-3-login
+{
+overflow:hidden;
+animation-duration:0.4s;
+transition:all 0.4s;
+}
+.gpl{
+  margin-top:2%;
+  margin-bottom:1%;
+}
+.gpl p
+{
+  color:#F5E5FA;
+  font-size:2em;
+  font-style:italic;
+}
+.gpl a
+{
+  text-decoration:none;
+}
+.sign_in
+{
+  margin-top:2.2%;
+  margin-bottom:1%;
+}
+.details
+{
+  background-color:#F5FfFF;
+  border:none;
+  border-radius:2px;
+}
+.details::-webkit-input-placeholder
+{
+  opacity:0.8;
+  color:#754983;
+  letter-spacing:1.5px;
+  font-size:1.1em;
+}
+.details::-moz-input-placeholder
+{
+  color:#754983;
+  letter-spacing:1.5px;
+  font-size:1.1em;
+}
+.details::-moz-placeholder
+{
+  color:#754983;
+  letter-spacing:1.5px;
+  font-size:1.1em;
+}
+.set-fixed
+{
+  position:fixed;
+  z-index:5;
+  top:0;
+}
+.set-fixed1
+{
+  position:fixed;
+  z-index:6;
+  top:0;
+}
+.inp
+{
+  background-color:#5d376d;
+  border-radius:2px;
+  border:none;
+  letter-spacing:1.5px;
+  font-size:1.2em;
+  text-align:center;
+  color:#F5FfFF;
+}
+.left-space
+{
+  display:none;
+}
+.inp:hover
+{
+  background-color:#7C5C87;
+}
+.in
+{
+  margin-left:2%;
+}
+.content
+{
+  width:100%;
+  background-color:#efefef;
+}
+.cric
+{
+  margin-top:8%;
+  margin-left:10%;
+  height:33em;
+}
+.cric1
+{
+  margin-top:10%;
+  float:right;
+}
+.player
+{
+  width:50%;
+  height:auto;
+}
+#player2
+{
+  margin-left:10%;
+  width:70%;
+}
+.sign-up
+{
+  margin-top:5%;
+  height:30em;
+}
+#sign
+{
+  color:#4A2E5C;
+  font-size:3em;
+  text-align:right;
+  margin:0px;
+  margin-right:5px;
+}
+#space
+{
+  margin:0px;
+  margin-right:5px;
+  margin-bottom:5px;
+  color:#4A2E5C;
+  font-size:1.2em;
+  text-align:right;
+}
+.det
+{
+  border-right:10px solid #4A2E5C;
+  padding:0px 10px;
+}
+.form-group
+{
+  margin-bottom:2px;
+}
+.sub-style
+{
+  background-color:transparent;
+  color:#4A2E5C;
+  border:2px solid #4A2E5C;
+  font-size:1.3em;
+  border-radius:2px;
+}
+.sub-div
+{
+  margin-top:7%;
+  margin-left:41%;
+}
+.sub-div:hover .sub-style
+{
+  background-color:#4A2E5C;
+  color:#efefef;
+  transition: all 400ms ease;
+}
+#contact_form input
+{
+  padding:10px 5px;
+  border:none;
+}
+#success_message{ display: none;}
+.well
+{
+  border:none;
+  background-color:transparent;
+  padding:0px;
+  margin:0px;
+}
+.input-group-addon
+{
+  border:none;
+  background-color:transparent;
+}
+@media only screen and (max-width:767px)
+{
+  .cric
+  {
+    display:none;
+  }
+    .left-space
+  {
+    display:block;
+  }
+  #sign
+  {
+    font-size:1.8em;
+  }
+  #space
+  {
+    font-size:1em;
+  }
+.sign-up
+{
+  margin-top:20%;
+  height:auto;
+}
+.gpl p
+{
+  font-size:1.3em;
+}
+.sub-div
+{
+  margin-left:40%;
+  margin-top:10%;
+}
+.sub-style
+{
+  font-size:0.8em;
+}
+}
+@media only screen and (min-width:768px) and (max-width:991px)
+{
+  .cric
+  {
+    display:none;
+  }
+  .left-space
+  {
+    display:block;
+  }
+    #sign
+  {
+    font-size:2.2em;
+  }
+  #space
+  {
+    font-size:1em;
+  }
+  .sign-up
+{
+  margin-top:20%;
+  height:auto;
+}
+.gpl p
+{
+  font-size:1.8em;
+}
+}
+@media only screen and (min-width:992px) and (max-width:1191px)
+{
+  .cric
+  {
+    display:none;
+  }
+  .left-space
+  {
+    display:block;
+  }
+  #sign
+  {
+    font-size:2.8em;
+  }
+  #space
+  {
+    font-size:1.5em;
+  }
+  .sub-div
+  {
+    margin-left:42%;
+  }
+  .sign-up
+  {
+    vertical-align:middle;
+  height:auto;
+  }
+  .sign-up .form-control
+  {
+    height:3.5em;
+    font-size:1.2em;
+  }
+}
