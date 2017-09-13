@@ -26,3 +26,95 @@ body
   display:none;
   transition:all 0.5s;
 }
+#sec-login
+{
+  display:none;
+}
+@media only screen and (max-width:767px)
+{
+.login-mob
+{
+  display:none;
+  background:linear-gradient(to right,#5d376d 10%,#2f2346 90%);
+  box-shadow:0px 2px 8px grey;
+  width:100%;
+}
+  #sec-login
+  {
+    display:block;
+  }
+  #mob-log
+{
+  color:#4A2E5C;
+  font-size:2.1em;
+  text-align:left;
+  margin:0px;
+  margin-right:5px;
+}
+#mob-space
+{
+  margin:0px;
+  margin-right:5px;
+  margin-bottom:5px;
+  color:#4A2E5C;
+  font-size:1.2em;
+  text-align:left;
+}
+.mob-det
+{
+  margin-top:5%;
+  border-left:10px solid #4A2E5C;
+  padding:0px 10px;
+}
+.login-margin
+{
+  margin-top:30%;
+}
+.sub-div-login
+{
+  margin-top:7%;
+  margin-left:5%;
+}
+#not_register
+{
+  color:#4A2E5C;
+  margin-top:4%;
+  margin-left:35%;
+}
+.sub-div-login:hover .sub-style,.create:hover .sub-style
+{
+  background-color:#4A2E5C;
+  color:#efefef;
+  transition: all 400ms ease;
+}
+}
+.menu-arrow
+{
+  width:3%;
+  height:3em;
+  top:50%;
+  padding-top:10px;
+  padding-left:10px;
+  position:fixed;
+  z-index:11;
+  background-color:black;
+  opacity:0;
+  transition:all 0.2s ease;
+}
+.menu-arrow:hover
+{
+  background-color:#4A2E5C;;
+  transition: all 0.2s ease;
+}
+.right-arrow
+{
+  font-size:2em;
+  color:white;
+}
+@media only screen and (min-width:768px) and (max-width:1200px)
+{
+  .menu-arrow
+  {
+    width:5%;
+  }
+}

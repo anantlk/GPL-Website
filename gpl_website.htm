@@ -7,27 +7,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.1.21/tilt.jquery.min.js"></script>
   <link rel="stylesheet" href="gpl_website.css"/>
   <link rel="stylesheet" href="sec_1.css"/>
   <link rel="stylesheet" href="sec_2.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.1.21/tilt.jquery.min.js"></script>
 </head>
 <body>
 <div id="overlay" onclick="closeNav()"></div>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a href="#sec_1" onclick="closeNav()">Home</a>
+  <a href="#sec_2" id="nav-login" onclick="closeNav()">Login</a>
+  <a href="#sec_2" onclick="closeNav()">SignUp</a>
+  <a href="#sec_3" onclick="closeNav()">About</a>
 </div>
 
 <!-- Use any element to open the sidenav -->
 
-
+<div class="menu-arrow" onclick="openNav()">
+<a><i class="fa fa-chevron-right right-arrow"></i></a>
+</div>
  <section id="sec_1">
   <div class="back">
     <div class="row">
@@ -37,10 +39,10 @@
       <div class="col-sm-6 col-lg-7 col-md-6 col-xs-5">
       </div>
       <div class="name col-md-3 col-xs-4 col-sm-3 col-lg-3">
-        <p class="animated fadeInDown"><span id="ieee">IEEE-</span>CS<span id="vit">VIT</span></p>
+        <p class="animated fadeInDown"><span id="ieee">IEEE-CS</span><span id="vit">VIT</span></p>
       </div>
     </div>
-      <h1 class="animated fadeInDown" id="gravitas">graVITas Premiere League</h1>
+      <h1 class="animated fadeInDown" id="gravitas"><span id="first">graVITas</span> Premier League</h1>
       <div class="home-content">
       <p class="animated fadeInDown" id="home_content">Cricket fan? Want to Create the leagacy of your own cricket team?</p>
       <p class="animated fadeInDown" id="home_content">Be a part of this super addictive online cricket game event this graVITas!</p>
@@ -51,19 +53,81 @@
   <a href="#sec_2"><img class="animated zoomIn infinite" src="next.png"></img></a>
 </div>
 </div>
+<div class="sec-1-footer">
   <p id="vit-university">VIT UNIVERSITY</p>
   </div>
 </section>
+
+<section id="sec-login">
+<div class="hidden-menu"></div>
+    <div class="row login-mob" id="sec-mob-login" >
+      <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1">
+      </div>
+      <div class="gpl col-sm-3 col-lg-2 col-md-4 col-xs-6">
+        <a href="#sec_3"><p id="#gpl">GPL</p></a>
+      </div>
+      <div class="space col-sm-0 col-lg-4 col-xs-4 col-md-1">
+      </div>
+      <div class="sign_in col-sm-8 col-md-6 col-lg-5 col-xs-5">
+        <form  class="form-inline">
+          <div class="form-group">
+          <input type="email" id="username" class="form-control details" placeholder="Username" required></input>
+        </div>
+        <div class="form-group">
+          <input type="password" id="password" class="form-control details" placeholder="Password" required></input>
+        </div>
+        <div class="form-group in">
+          <input type="submit" id="login" class="form-control inp" value="Login"></input>
+        </div>
+        </form>
+      </div>
+    </div>
+<div class="row content">
+<div class="col-xs-2"></div>
+<div class="login-margin col-xs-9">
+      <div class="row">
+      <p id="mob-log">Login</p>
+      <p id="mob-space">lorem ipsum adjknfjnfajndn</p>
+      <div class="mob-det">
+<form class="well" action=" " method="post"  id="mobile-login"  name="mobile-login">
+<div class="form-group">
+  <div class="inputGroupContainer det-style">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="user_name" id="login-user-name" placeholder="Username" class="form-control det-height"  type="text" required>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+    <div class="inputGroupContainer det-style">
+    	<div class="input-group">
+  		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  		<input name="user_password" id="login-user-password" placeholder="Password" class="form-control det-height"  type="password" required>
+    	</div>
+  	</div>
+</div>
+ </form>
+    <div class="sub-div">
+      <button  type="submit" id="form-sub"  class="btn sub-style">LOGIN</button>
+    </div> 
+    <a href="#sec_2"><p id="not_register">Not Registered?</p></a>
+    </div>
+   </div>
+  </div>
+  </div>
+  </div>
+</section>
+
 
 <section id="sec_2" class="row">
   <div class="hidden-menu"></div>
     <div class="row login" id="sec-2-login" >
       <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1">
       </div>
-      <div class="gpl col-sm-3 col-lg-2 col-md-2 col-xs-2">
-        <a href="#sec_3"><p>What is GPL?</p></a>
+      <div class="gpl col-sm-3 col-lg-2 col-md-4 col-xs-6">
+        <a href="#sec_3"><p id="#gpl">GPL</p></a>
       </div>
-      <div class="space col-sm-0 col-lg-4 col-xs-4 col-md-3">
+      <div class="space col-sm-0 col-lg-4 col-xs-4 col-md-1">
       </div>
       <div class="sign_in col-sm-8 col-md-6 col-lg-5 col-xs-5">
         <form  class="form-inline">
@@ -83,62 +147,68 @@
       <div class="cric col-lg-5 col-md-3 col-sm-3 col-xs-3">
         <img data-tilt src="player1.png" class="player"></img>
     </div>
-    <div class="left-space col-m-3 col-sm-3 col-xs-2"></div>
-    <div class="sign-up col-lg-4 col-md-6 col-sm-6 col-xs-8">
+    <div class="left-space col-m-3 col-sm-3 col-xs-1"></div>
+    <div class="sign-up col-lg-4 col-md-6 col-sm-6 col-xs-9">
       <div class="row">
       <p id="sign">Sign Up</p>
       <p id="space">lorem ipsum adjknfjnfajndn</p>
       <div class="det">
-<form class="well" action=" " method="post"  id="contact_form">
+<form class="well" action=" " method="post"  id="contact_form"  name="contact_form">
 <div class="form-group">
-  <div class="inputGroupContainer">
+  <div class="inputGroupContainer det-style">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="name" placeholder="Name" id="name" class="form-control"  type="text" required></input>
+  <input  name="name" placeholder="Name" id="name" class="form-control det-height"  type="text" required></input>
     </div>
   </div>
 </div>
+<p class="msg" id="name-msg">Field should not be empty!!</p>
 <div class="form-group">
-  <div class="inputGroupContainer">
+  <div class="inputGroupContainer det-style">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="user_name" id="user_name" placeholder="Username" class="form-control"  type="text" required>
+  <input  name="user_name" id="user_name" placeholder="Username" class="form-control det-height"  type="text" required>
     </div>
   </div>
 </div>
+<p class="msg" id="user-msg">Field should not be empty!!</p>
 <div class="form-group">
-    <div class="inputGroupContainer">
+    <div class="inputGroupContainer det-style">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="user_password" id="user_password" placeholder="Password" class="form-control"  type="password" required>
+  <input name="user_password" id="user_password" placeholder="Password" class="form-control det-height"  type="password" required>
     </div>
   </div>
 </div>
+    <p class="msg" id="len-msg">Password must be of at least 8 characters</p>
 <div class="form-group">
-    <div class="inputGroupContainer">
+    <div class="inputGroupContainer det-style">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="form-control"  type="password" required>
+  <input name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="form-control det-height"  type="password" required>
   </div>
   </div>
 </div>
+<p class="msg" id="eq-msg">Password mismatch!</p>
   <div class="form-group">
-    <div class="inputGroupContainer">
+    <div class="inputGroupContainer det-style">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="email" placeholder="E-Mail Address" id="email" class="form-control"  type="email" required>
+  <input name="email" placeholder="E-Mail Address" id="email" class="form-control det-height"   required>
     </div>
   </div>
 </div>
+<p class="msg" id="email-check">Invalid Email!</p>
 <div class="form-group">
-    <div class="input-group">
+    <div class="input-group det-style">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contactNo" pattern="[7-9][0-9]{9}" id="contactNo" placeholder="Contact No." class="form-control" type="text" required>
+  <input name="contactNo" id="contactNo" placeholder="Contact No." class="form-control det-height" type="text" required>
   </div>
 </div>
-        <div class="sub-div">
-        <button type="submit" id="submit" class="btn sub-style">SUBMIT</button>
-      </div>
+  <p class="msg" id="contact-msg">Contact No is not Valid!</p>
+   <div class="sub-div">
+      <button  type="button" id="form-sub" onclick="validate_form()"  class="btn sub-style">SUBMIT</button>
+    </div> 
         </form>
       </div>
     </div>
@@ -152,12 +222,12 @@
     <div class="row login" id="sec-3-login">
       <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1">
       </div>
-      <div class="gpl col-sm-3 col-lg-2 col-md-2 col-xs-2">
+      <div class="gpl col-sm-4 col-lg-2 col-md-4 col-xs-6">
         <p>About GPL</p>
       </div>
-      <div class="space col-sm-0 col-lg-4 col-xs-4 col-md-3">
+      <div class="space col-sm-0 col-lg-4 col-xs-4 col-md-1">
       </div>
-      <div class="sign_in col-sm-8 col-md-6 col-lg-5 col-xs-5">
+      <div class="sign_in col-sm-8 col-md-4 col-lg-5 col-xs-5">
         <form  class="form-inline">
           <div class="form-group">
           <input type="email" id="username" class="form-control details" placeholder="Username" required></input>
@@ -181,92 +251,364 @@
     </div>
   </section>
 </body>
+<script>
+</script>
 <script type="text/javascript">
+var invalid=1;
+var k1=0,k2=0,k3=0,k4=0,k5=0,k6=0;
+function validate_form()
+{ 
+	if(document.getElementById("name").value.length===0)
+	{
+		$("#name-msg").show();
+		k5=0;
+	}
+	else
+	{
+		$("#name-msg").hide();
+		k5=1;
+	}
+	if(document.getElementById("user_name").value.length===0)
+	{
+		$("#user-msg").show();
+		k6=0;
+	}
+	else
+	{
+		$("#user-msg").hide();
+		k6=1;
+	}
+	if(document.getElementById("user_password").value.length===0)
+	{
+		$("#len-msg").show();
+		k1=0;
+	}
+	else
+	{
+		$("#len-msg").hide();
+		k1=1;
+	}
+	if(document.getElementById("confirm_password").value.length===0 || $("#user_password").val()!==$("#confirm_password").val())
+	{
+		$("#eq-msg").show();
+		k2=0;
+	}
+	else
+	{
+		$("#eq-msg").hide();
+		k2=1;
+	}
+	if(document.getElementById("email").value.length===0)
+	{
+		$("#email-check").show();
+		k4=0;
+	}
+	else
+	{
+		$("#email-check").hide();
+		k4=1;
+	}
+	if(document.getElementById("contactNo").value.length===0)
+	{
+		$("#contact-msg").show();
+		k3=0;
+	}
+	else
+	{
+		$("#conatct-msg").hide();
+		k3=1;
+	}
+	if(k1===1 && k2===1 && k3===1 && k4===1 && k5===1 && k6===1)
+	{
+		invalid=0;
+	}
+	else
+	{
+		invalid=1;
+	}
+	if(invalid===1)
+	{
+	}
+	else
+	{
+		document.getElementById("contact_form").submit();
+	}
+}
 $(document).ready(function(){
 const tilt = $('.player').tilt();
-//console.log($(".login").height());
+console.log($(window).width());
 var content_height=$(window).height()-$(".login").height();
-$(".content").css({"height":content_height+'px'});
-//console.log($(window).width());
-  var h=$(".login").outerHeight();
+console.log(content_height);
+$(".content").css({"min-height":content_height+'px'});
+var w=$(window).width();
+if(w<=768)
+{
+	$("#first").html("graVITas<br>");
+}
+else
+{
+	$("#first").html("graVITas");
+}
+  var h=$(".login").height();
+  console.log("height="+h);
   var z=h;
   $(".hidden-menu").css({"height":h+'px'});
-var dist1=$("#sec_2").offset().top,dist2=$("#sec_3").offset().top;
+
+if(w<768)
+{
+$("#nav-login").attr("href","#sec-login");
+var dist1=$("#sec-login").offset().top,dist2=$("#sec_3").offset().top;
 $(window).on("scroll",function(){
   x=$(window).scrollTop();
 if(x>=dist1)
 {
-  //$(".hidden-menu").css({"display":"none"});
+  $("#sec-mob-login").addClass("set-fixed");
+  $("#sec-mob-login").css("height",h+'px');
+  $("#sec-mob-login").css({"display":"block"});
+  $("#sec-mob-login").addClass("animated").addClass("slideInDown");
+  if(x>=dist2-5)
+  {  
+    $(".gpl p").text("About GPL");  
+  }
+  else {
+    $(".gpl p").text("GPL");
+  }
+}
+else{
+  $("#sec-mob-login").css("height","0");
+}
+});
+}
+else
+{
+$("#nav-login").attr("href","#sec_2");
+var dist1=$("#sec_2").offset().top,dist2=$("#sec_3").offset().top;
+$(window).on("scroll",function(){
+  x=$(window).scrollTop();
+  console.log("x="+x);
+  console.log("dist1="+dist1);
+  console.log("dist2="+dist2);
+if(x>=dist1)
+{
+  $(".menu-arrow").css("opacity","0.5");
   $("#sec-2-login").addClass("set-fixed");
   $("#sec-2-login").css("height",h+'px');
   $("#sec-2-login").css({"display":"block"});
   $("#sec-2-login").addClass("animated").addClass("slideInDown");
   if(x>=dist2-5)
-  {  //$("#sec-2-login").css("display","none");
-    // $("#sec-3-login").addClass("set-fixed1");
-    // $("#sec-3-login").css("height",h+'px');
-    // $("#sec-3-login").css("display","block");
-    $(".gpl p").text("About GPL");
+  {  
+    $(".gpl p").text("About GPL");  
   }
   else {
-    //console.log("window:"+x);
-    //console.log("dist:"+dist2);
-    //$("#sec-3-login").removeClass("set-fixed1");
-    //$("#sec-2-login").css("display","block");
-    //$("#sec-3-login").removeClass("set-fixed").removeClass("animated").Class("slideInDown");
-    $(".gpl p").text("What is GPL?");
+    $(".gpl p").text("GPL");
   }
 }
 else{
-  //$("#sec-2-login").removeClass("set-fixed");
+	$(".menu-arrow").css("opacity","0");
   $("#sec-2-login").css("height","0");
-  //$("#sec-2-login").removeClass("slideInDown").addClass("slideOutUp");
-  //$("#sec-2-login").css({"display":"none"})
-  //$(".hidden-menu").css({"display":"block","height":h+'px'});
 }
 });
+}
+$("#name").keyup(function(){
+	if($("#name").val().length===0){$("#name-msg").show();}
+	else{$("#name-msg").hide();}
+});
+$("#user_name").keyup(function(){
+	if($("#user_name").val().length===0){$("#user-msg").show();}
+	else{$("#user-msg").hide();}
+});
+$("#user_password").keyup(function(){
+	if($("#user_password").val().length<8 && $("#user_password").val().length!==0)
+	{
+		$("#len-msg").show();
+		k1=0;
+	}
+	else
+	{
+		k1=1;
+		$("#len-msg").hide();
+	}
+	if($("#confirm_password").val()!==$("#user_password").val() && $("#confirm_password").val().length!==0)
+	{
+	$("#eq-msg").show();
+	k2=0;	
+	}
+	else
+	{
+		k2=1;
+		$("#eq-msg").hide();
+	}
+});
+$("#confirm_password").keyup(function(){
+	if($("#user_password").val()!==$("#confirm_password").val() && $("#confirm_password").val().length!==0)
+	{
+		$("#eq-msg").show();
+		k2=0;
+	}
+	else
+	{
+		k2=1;
+		$("#eq-msg").hide();
+	}
+});
+$("#contactNo").keyup(function(){
+	var z=new RegExp("^[0-9]{10,13}[ ]{0,}$");
+	if(!z.test($("#contactNo").val()) && $("#contactNo").val().length!=0)
+	{
+		$("#contact-msg").show();
+		k3=0;
+	}
+	else
+	{
+		k3=1;
+		$("#contact-msg").hide();
+	}
+});
+$("#email").keyup(function(){
+	var z=new RegExp("^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$");
+	if(!z.test($("#email").val()) && $("#email").val().length!==0)
+	{
+		$("#email-check").show();
+		k4=0;
+	}
+	else
+	{
+		k4=1;
+		$("#email-check").hide();
+	}
+});
 $(window).on("resize",function(){
-  var h=z;
+$("#sec-2-login").css("display","none");	
+  $(".login").css("height","auto");
+  h=$(".login").height();
   var content_height=$(window).height()-h;
-  $(".content").css("height",content_height+'px');
+  $(".content").css("min-height",content_height+'px');
   x=$(window).scrollTop();
   console.log("window:"+x);
-  var dist1=$("#sec_2").offset().top,dist2=$("#sec_3").offset().top;
-  console.log("dist1:"+dist1);console.log("dist2:"+dist2);
+  w=$(window).width();
+  if(w<=768)
+	{
+		$("#first").html("graVITas<br>");
+	}
+	else
+	{
+		$("#first").html("graVITas");
+	}
+	$(".hidden-menu").css({"height":h+'px'});
+ 
+ if(w<768)
+ {
+ $("#nav-login").attr("href","#sec-login");
+ var dist1=$("#sec-login").offset().top,dist2=$("#sec_3").offset().top;
   $(window).on("scroll",function(){
     x=$(window).scrollTop();
-    if(x>=dist1)
-    {
-      //$(".hidden-menu").css({"display":"none"});
-      $("#sec-2-login").addClass("set-fixed");
-      $("#sec-2-login").css({"display":"block"});
-      $("#sec-2-login").addClass("animated").addClass("slideInDown");
-      if(x>=dist2-5)
-      {  //$("#sec-2-login").css("display","none");
-        $("#sec-3-login").addClass("set-fixed1");
-        $("#sec-3-login").css("display","block");
-        $("#sec-3-login").addClass("animated").addClass("slideInDown");
-      }
-      else {
-        //console.log("window:"+x);
-        //console.log("dist:"+dist2);
-        $("#sec-3-login").css("height","0");
-        //$("#sec-3-login").removeClass("set-fixed1");
-        //$("#sec-2-login").css("display","block");
-        //$("#sec-3-login").removeClass("set-fixed").removeClass("animated").Class("slideInDown");
-        //$("#sec-3-login").slideUp(200);
-      }
+  if(x>=dist1)
+  {
+    $("#sec-mob-login").addClass("set-fixed");
+    $("#sec-mob-login").css("height",h+'px');
+     $("#sec-mob-login").css({"display":"block"});
+    $("#sec-mob-login").addClass("animated").addClass("slideInDown");
+    if(x>=dist2-5)
+    { 
+      $(".gpl p").text("About GPL");
     }
-    else{
-      //$("#sec-2-login").removeClass("set-fixed");
-      $("#sec-3-login").css("height","0");
-      //$("#sec-2-login").slideUp(200);
-      //$("#sec-2-login").removeClass("slideInDown").addClass("slideOutUp");
-      //$("#sec-2-login").css({"display":"none"})
-      //$(".hidden-menu").css({"display":"block","height":h+'px'});
-    }
+    else {
+      $(".gpl p").text("GPL");
+		}
+}
+  else{
+    $("#sec-mob-login").css("height","0");
+  }
   });
+ }
+ else
+ {
+ 	$("#nav-login").attr("href","#sec_2");
+ 	$("#sec-mob-login").css({"height":"0","width":"0"});
+  var dist1=$("#sec_2").offset().top,dist2=$("#sec_3").offset().top;
+  $(window).on("scroll",function(){
+    x=$(window).scrollTop();
+  if(x>=dist1)
+  {
+    $("#sec-2-login").addClass("set-fixed");
+    $("#sec-2-login").css("height",h+'px');
+    $("#sec-2-login").css({"display":"block"});
+    $("#sec-2-login").addClass("animated").addClass("slideInDown");
+    if(x>=dist2-5)
+    { 
+       $("#sec-3-login").css("height",h+'px');
+      $(".gpl p").text("About GPL");
+    }
+    else {
+      $(".gpl p").text("GPL");
+		}
+}
+  else{
+    $("#sec-2-login").css("height","0");
+  }
+  });
+}
+  var k=1;
+$("#user_password").keyup(function(){
+
+	if($("#user_password").val().length<8 && $("#user_password").val().length!==0)
+	{
+		$("#len-msg").show();
+		k1=0;
+	}
+	else
+	{
+		k1=1;
+		$("#len-msg").hide();
+	}
+	if($("#confirm_password").val()!==$("#user_password").val() && $("#confirm_password").val().length!==0)
+	{
+	$("#eq-msg").show();	
+	}
+	else
+	{
+		$("#eq-msg").hide();
+	}
 });
+$("#confirm_password").keyup(function(){
+	if($("#user_password").val()!==$("#confirm_password").val() && $("#confirm_password").val().length!==0)
+	{
+		$("#eq-msg").show();
+		k2=0;
+	}
+	else
+	{
+		k2=1;
+		$("#eq-msg").hide();
+	}
+});
+$("#contactNo").keyup(function(){
+	var z=new RegExp("^[0-9]{10,13}[ ]{0,}$");
+	if(!z.test($("#contactNo").val()) && $("#contactNo").val().length!=0)
+	{
+		$("#contact-msg").show();
+		k3=0;
+	}
+	else
+	{
+		k3=1;
+		$("#contact-msg").hide();
+	}
+});
+$("#email").keyup(function(){
+	var z=new RegExp("^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$");
+	if(!z.test($("#email").val()) && $("#email").val().length!==0)
+	{
+		$("#email-check").show();
+		k4=0;
+	}
+	else
+	{
+		k4=1;
+		$("#email-check").hide();
+	}
+});
+  });
 });
 	function openNav() {
 	var w=screen.width;
@@ -275,18 +617,13 @@ $(window).on("resize",function(){
 	else if(w<=900 && w>=768){document.getElementById("mySidenav").style.width="28%"}
 	else{document.getElementById("mySidenav").style.width="35%";}
     document.getElementById("overlay").style.display="block";
-    // document.getElementById("mySidenav").style.display="block";
-    // document.getElementById("ham").style.display="none";
     document.body.style.overflowY="hidden";
 }
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("overlay").style.display="none";
-    // document.getElementById("mySidenav").style.display="none";
-    // document.getElementById("sec_1").style.marginLeft = "0";
-    // document.getElementById("ham").style.display="block";
-     document.body.style.overflowY="scroll";
+    document.body.style.overflowY="scroll";
 }
 </script>
 </html>

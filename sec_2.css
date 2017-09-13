@@ -8,6 +8,14 @@
   background-color:#efefef;
   width:100;
 }
+.det-style
+{
+  padding:3px;
+}
+.det-height
+{
+  margin-bottom:5px;
+}
 .login
 {
   display:none;
@@ -15,7 +23,7 @@
   box-shadow:0px 2px 8px grey;
   width:100%;
 }
-#sec-2-login,#sec-3-login
+#sec-2-login,#sec-3-login,#sec-mob-login
 {
 overflow:hidden;
 animation-duration:0.4s;
@@ -24,6 +32,12 @@ transition:all 0.4s;
 .gpl{
   margin-top:2%;
   margin-bottom:1%;
+}
+.msg
+{
+  margin-left:10%;
+  color:red;
+  display:none;
 }
 .gpl p
 {
@@ -69,12 +83,6 @@ transition:all 0.4s;
 {
   position:fixed;
   z-index:5;
-  top:0;
-}
-.set-fixed1
-{
-  position:fixed;
-  z-index:6;
   top:0;
 }
 .inp
@@ -152,6 +160,18 @@ transition:all 0.4s;
   border-right:10px solid #4A2E5C;
   padding:0px 10px;
 }
+.det input::-webkit-input-placeholder
+{
+  font-size:1.2em;
+}
+.det input::-moz-input-placeholder
+{
+  font-size:1.2em;
+}
+.det input::-moz-placeholder
+{
+  font-size:1.2em;
+}
 .form-group
 {
   margin-bottom:2px;
@@ -195,10 +215,24 @@ transition:all 0.4s;
 }
 @media only screen and (max-width:767px)
 {
+  .msg
+  {
+    margin-left:15%;
+    font-size:0.7em;
+  }
+  .sign_in
+  {
+    display:none;
+  }
   .cric
   {
     display:none;
   }
+  .cric1
+  {
+    display:none;
+  }
+
     .left-space
   {
     display:block;
@@ -218,7 +252,7 @@ transition:all 0.4s;
 }
 .gpl p
 {
-  font-size:1.3em;
+  font-size:1.5em;
 }
 .sub-div
 {
@@ -229,10 +263,31 @@ transition:all 0.4s;
 {
   font-size:0.8em;
 }
+  .det input::-webkit-input-placeholder
+  {
+  font-size:0.9em;
+  }
+  .det input::-moz-input-placeholder
+  {
+    font-size:0.9em;
+  }
+  .det input::-moz-placeholder
+{
+  font-size:0.9em;
+}
 }
 @media only screen and (min-width:768px) and (max-width:991px)
 {
+  .msg
+  {
+    margin-left:12%;
+    font-size:0.9em;
+  }
   .cric
+  {
+    display:none;
+  }
+    .cric1
   {
     display:none;
   }
@@ -242,16 +297,32 @@ transition:all 0.4s;
   }
     #sign
   {
-    font-size:2.2em;
+    font-size:2.5em;
   }
   #space
   {
     font-size:1em;
   }
-  .sign-up
+  .det input::-webkit-input-placeholder
+  {
+  font-size:1.4em;
+  }
+  .det input::-moz-input-placeholder
+  {
+    font-size:1.4em;
+  }
+  .det input::-moz-placeholder
 {
-  margin-top:20%;
+  font-size:1.4em;
+}
+  .sign-up
+  {
+  margin-top:28%;
   height:auto;
+}
+#ieee
+{
+  font-size:1.3em;
 }
 .gpl p
 {
@@ -260,7 +331,16 @@ transition:all 0.4s;
 }
 @media only screen and (min-width:992px) and (max-width:1191px)
 {
+  .msg
+  {
+    margin-left:9%;
+    font-size:1.1em;
+  }
   .cric
+  {
+    display:none;
+  }
+    .cric1
   {
     display:none;
   }
@@ -268,6 +348,63 @@ transition:all 0.4s;
   {
     display:block;
   }
+  #sign
+  {
+    font-size:3.3em;
+  }
+  #space
+  {
+    font-size:1.5em;
+  }
+  .sub-div
+  {
+    margin-left:42%;
+  }
+  .form-sub
+  {
+    font-size:2em;
+  }
+  .sign-up
+  {
+    margin-top:10%;
+    vertical-align:middle;
+  height:auto;
+  }
+  .det input::-webkit-input-placeholder
+{
+  font-size:1.7em;
+}
+.det input::-moz-input-placeholder
+{
+  font-size:1.7em;
+}
+.det input::-moz-placeholder
+{
+  font-size:1.7em;
+}
+  .sign-up .form-control
+  {
+    height:3.5em;
+    font-size:1.2em;
+  }
+}
+@media only screen and (min-width:1192px) and (max-width:1300px)
+{
+  .sign-up
+  {
+    margin-top:11%;
+  }
+  .cric
+  {
+    margin-top:15%;
+  }
+  .cric1
+  {
+    margin-top:18%;
+  }
+}
+/@media only screen and (min-width:1400px) and (max-width:1600px)
+{
   #sign
   {
     font-size:2.8em;
@@ -280,14 +417,54 @@ transition:all 0.4s;
   {
     margin-left:42%;
   }
+  #form-sub
+  {
+    font-size:1.5em;
+  }
   .sign-up
   {
+    margin-top:9%;
     vertical-align:middle;
   height:auto;
   }
+ .det input::-webkit-input-placeholder
+{
+  font-size:1.2em;
+}
+.det input::-moz-input-placeholder
+{
+  font-size:1.2em;
+}
+.det input::-moz-placeholder
+{
+  font-size:1.2em;
+}
   .sign-up .form-control
   {
-    height:3.5em;
+    height:2.2em;
     font-size:1.2em;
   }
+}
+@media only screen and (min-width:1601px) and (max-width:1800px)
+{
+   .gpl p
+  {
+    font-size:3em;
+  }
+  .sign_in
+  {
+    margin-top:2.5%;
+  }
+}
+@media only screen and (min-width:1801px)
+{
+     .gpl p
+  {
+    font-size:3em;
+  }
+  .sign_in
+  {
+    margin-top:2.5%;
+  }
+  
 }
