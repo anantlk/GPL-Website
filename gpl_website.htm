@@ -95,7 +95,7 @@
   <div class="inputGroupContainer det-style">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="user_name" id="login-user-name" placeholder="Username" class="form-control det-height"  type="text" required>
+  <input  name="user_name" id="username" placeholder="Username" class="form-control det-height"  type="text" required>
     </div>
   </div>
 </div>
@@ -103,14 +103,14 @@
     <div class="inputGroupContainer det-style">
     	<div class="input-group">
   		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  		<input name="user_password" id="login-user-password" placeholder="Password" class="form-control det-height"  type="password" required>
+  		<input name="user_password" id="password" placeholder="Password" class="form-control det-height"  type="password" required>
     	</div>
   	</div>
 </div>
- </form>
     <div class="sub-div">
-      <button  type="submit" id="form-sub"  class="btn sub-style">LOGIN</button>
+      <input  type="submit" id="form-sub"  class="btn sub-style" value="LOGIN"></input>
     </div> 
+ </form>
     <a href="#sec_2"><p id="not_register">Not Registered?</p></a>
     </div>
    </div>
@@ -548,7 +548,6 @@ $("#sec-2-login").css("display","none");
   }
   });
 }
-  var k=1;
 $("#user_password").keyup(function(){
 
 	if($("#user_password").val().length<8 && $("#user_password").val().length!==0)

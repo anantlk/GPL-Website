@@ -365,7 +365,7 @@ margin-top:-10px;
 }
 #gravitas
 {
-  margin-top:10%;
+  margin-top:25%;
   font-size:5em;
 }
 #home_content
@@ -387,6 +387,10 @@ margin-top:-10px;
 .name p
 {
   font-size:2.1em;
+}
+.down-arrow
+{
+  margin-top:5%;
 }
 .next img
 {
