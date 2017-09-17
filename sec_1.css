@@ -20,8 +20,8 @@
 
 .ham
 {
-  margin-top:3%;
-  margin-left:3%;
+  margin-top:2.5%;
+  text-align:center;
 }
 .ham a i
 {
@@ -40,9 +40,8 @@
 }
 .name
 {
-  padding-top:5px;
   margin-left:3%;
-  margin-top:4%;
+  margin-top:2.5%;
 }
 .name p
 {
@@ -182,6 +181,10 @@ margin-top:-10px;
   padding:10px;
   line-height:1.2;
   margin-top:7%;
+}
+.name
+{
+  margin-top:4%;
 }
 .name p
 {

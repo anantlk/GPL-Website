@@ -1,6 +1,11 @@
 #sec_2
 {
+  position:relative;
   font-family:Open Sans !important;
+}
+.input-group .form-control
+{
+  z-index:0;
 }
 .hidden-menu
 {
@@ -82,7 +87,7 @@ transition:all 0.4s;
 .set-fixed
 {
   position:fixed;
-  z-index:5;
+  z-index:1;
   top:0;
 }
 .inp
